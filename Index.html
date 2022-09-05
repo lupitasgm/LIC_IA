@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Investigación aplicada</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="gallery-grid.css">
+
+
+	<script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+
+        ctx.fillStyle = "rgb(200,0,0)";
+        ctx.fillRect (10, 10, 55, 50);
+
+        ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
+        ctx.fillRect (30, 30, 55, 50);
+      }
+    }
+  </script>
+
+</head>
+<body onload="draw();">
+<header>
+
+</header>
+<div class="container gallery-container">
+    <h1>Bootstrap 3 Gallery</h1>
+    <div><p class="page-description text-center">Ejemplo de un Framework de Bootstrap</p></div>
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./imagenes/imagen1.png">
+                    <img src="./imagenes/imagen1.png" alt="Flores">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="./imagenes/imagen2.png">
+                    <img src="./imagenes/imagen2.png" alt="Agua">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="./imagenes/imagen3.png">
+                    <img src="./imagenes/imagen3.png" alt="Peces">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+<div class="container gallery-container">
+    <h1>Ejemplo de etiqueta canvas</h1>
+    <div class="tz-gallery">
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <canvas id="canvas" width="150" height="150"></canvas>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="texto-f">
+                <p>Este es un ejemplo de como funciona la etiqueta canvas. Se utiliza para dibujar gráficos usando secuencias de comandos (normalmente JavaScript) para completar. La etiqueta es un contenedor gráfica, se debe utilizar una secuencia de comandos para dibujar gráficos. Puede utilizar Canva dibujar trazados, cajas, círculos, los personajes y la adición de imágenes a través de una variedad de métodos.</p>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+</body>
+<footer>
+  <div class="texto-piedepagina">
+    <p>Lenguaje interpretado al cliente ©</p>
+  </div>
+</footer>
+</html>
